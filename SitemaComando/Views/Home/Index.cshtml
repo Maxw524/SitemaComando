@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <br />
+    <p>ㅤ</p>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 1 do Ranking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: blue;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: lawngreen 3px solid;
+            position: relative; 
+            z-index: 1; 
+        }
+
+            header h1 {
+                padding: 5px 0;
+                text-align: center;
+            }
+
+        .ranking {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px #bbb;
+        }
+
+        .top1 {
+            font-size: 24px;
+            color: darkslategrey;
+            text-align: center;
+        }
+
+            .top1 img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+        .logo {
+            position: absolute; 
+            top: 130px;
+            left: 143px; 
+            width: 80px; 
+            height: 100px; 
+        }
+
+        .banner { 
+            position: absolute; 
+            top: -70px;
+            left: 10;
+            width: 70%; 
+            height: 70px; 
+            opacity: 1.0; 
+            z-index: -1; 
+            object-fit:initial;
+    
+        }
+
+        .nome { 
+            color: blue;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ranking</h1>
+            <img class="logo" src="https://scontent.fpoj1-1.fna.fbcdn.net/v/t39.30808-6/305766915_584269483393320_2672217663260485643_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=ZO8SPDmnsIIAX9KPehT&_nc_ht=scontent.fpoj1-1.fna&oh=00_AfCW8qr0LAzZY3i9LkQ1ELQYl0j7bnrsxsStVTl7N-P-Gg&oe=656E34AB" alt="Logo"> <!-- adicionei esta linha -->
+            <img class="banner" src="https://comandoinformatica.com.br/wp-content/uploads/2022/07/Thg-COMANDO-INFORMATICA_HORIZONTAL_FND_BRANCO.png" alt="Banner"> <!-- adicionei esta linha -->
+        </div>
+    </header>
+    <div class="container">
+        <div class="ranking">
+            <div class="top1">
+                <h2>Top 1</h2>
+                <img src="https://comandoinformatica.com.br/wp-content/uploads/2022/08/Matheus900.jpg" alt="Foto do Funcionario">
+                <p>Colaborador: <span class="nome">Matheus Figueredo</span></p> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿@model FuncionarioModel
+@{
+    ViewData["Title"] = "Editar Funcionario";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Editar Funcionario</h1>
+
+</div>
+<form asp-controller="Funcionario" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Nome Do Funcionario">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" asp-for="Email" class="form-control" placeholder="Email Do Funcionario">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+
+    <div class="form-group">
+        <label for="celular">Celular</label>
+        <input type="text" asp-for="Pontuacao" class="form-control" placeholder="Celular Do Funcionario">
+        @Html.ValidationMessageFor(x => x.Pontuacao)
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary b-block w-100" style="margin-bottom: 5px;">Alterar</button>
+
+    <a class="btn btn-secondary w-100" asp-controller="Funcionario" asp-action="Index" role="button">Voltar</a>
+</form>
